@@ -1,0 +1,25 @@
+# This Ignore File For ESP32 Project
+
+/ESP32/.vscode/
+/ESP32/build/
+/ESP32/sdkconfig
+/ESP32/sdkconfig.old
+/ESP32/.clangd
+
+# This Ignore File For HMI Project
+/HMI/.vscode/
+/HMI/build/
+/HMI/.clangd
+/HMI/sdkconfig
+/HMI/sdkconfig.defaults
+
+
+# This Ignore File For HMI Project
+/Desktop_Application/backend/build/
+/Desktop_Application/backend/csv_uploads/
+/Desktop_Application/backend/dist/
+/Desktop_Application/backend/mcu_connection.log
+/Desktop_Application/backend/__pycache__/
+/Desktop_Application/backend/oee.db
+
+/Desktop_Application/oee-ui/src-tauri/backend/

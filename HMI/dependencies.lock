@@ -2,7 +2,7 @@ dependencies:
   espressif/esp_lcd_touch:
     dependencies: []
     source:
-      path: C:\Users\Rasu\OneDrive\Desktop\OEE FINAL VERSION\oee-esp32-Demo-kit\HMI\components\espressif__esp_lcd_touch
+      path: C:\Users\Rasu\OneDrive\Desktop\OEE ESPE32 FINAL VERSION\OEE-ESP32-FINAL_VERSION\HMI\components\espressif__esp_lcd_touch
       type: local
     version: 1.2.1
   idf:

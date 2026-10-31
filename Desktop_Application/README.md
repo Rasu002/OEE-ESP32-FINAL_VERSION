@@ -1,18 +1,5 @@
-# OEE Monitoring System & Desktop Application
+# OEE Monitoring  Desktop Application
 
-This repository contains the complete codebase for the OEE (Overall Equipment Effectiveness) Monitoring system. It consists of microcontroller firmware for data acquisition, HMI components, and a Tauri-based Desktop Application built with a React frontend and a FastAPI/Uvicorn Python backend.
-
----
-
-## 📂 Repository Structure
-
-* **`ESP32/`**: Microcontroller firmware for data collection and hardware interface (ESP-IDF).
-* **`HMI/`**: Local Human-Machine Interface firmware.
-* **`Desktop_Application/`**: The desktop monitoring dashboard application.
-  * **`backend/`**: Python backend powered by FastAPI, Uvicorn, and SQLite.
-  * **`oee-ui/`**: React + Vite frontend wrapped inside a Tauri environment.
-
----
 
 ## 💻 Development Workflow
 
@@ -79,7 +66,7 @@ cd Desktop_Application/backend
 
 Build the standalone executable:
 ```bash
-pyinstaller main.py --onefile --name production-backend
+python -m PyInstaller main.py --onefile --name production-backend
 ```
 
 After a successful build, you will find the executable inside:
