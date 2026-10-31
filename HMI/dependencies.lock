@@ -1,0 +1,17 @@
+dependencies:
+  espressif/esp_lcd_touch:
+    dependencies: []
+    source:
+      path: C:\Users\Rasu\OneDrive\Desktop\OEE FINAL VERSION\oee-esp32-Demo-kit\HMI\components\espressif__esp_lcd_touch
+      type: local
+    version: 1.2.1
+  idf:
+    source:
+      type: idf
+    version: 5.5.6
+direct_dependencies:
+- espressif/esp_lcd_touch
+- idf
+manifest_hash: e92afc6239d9b495e1689fcfaef37b3906df39f78c0bd52315c9940de07fd337
+target: esp32s3
+version: 2.0.0

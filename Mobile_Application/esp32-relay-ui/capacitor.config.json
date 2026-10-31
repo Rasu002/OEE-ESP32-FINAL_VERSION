@@ -1,0 +1,6 @@
+{
+  "appId": "com.sway.esp32relay",
+  "appName": "ESP32 Relay Controller",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

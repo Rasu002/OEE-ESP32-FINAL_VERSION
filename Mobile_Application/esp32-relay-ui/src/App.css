@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background: #020617;
+  color: #fff;
+}
+
+/* App container */
+.app {
+  min-height: 100vh;
+  padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.header h1 {
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  margin: 0;
+}
+
+.header p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Relay card */
+.card {
+  background: #0f172a;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text */
+.card-text h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-text span {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Toggle button */
+.toggle {
+  min-width: 5.5rem;
+  min-height: 3rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.toggle.on {
+  background: #22c55e;
+  color: #000;
+}
+
+.toggle.off {
+  background: #475569;
+  color: #fff;
+}
+
+.toggle:disabled {
+  opacity: 0.6;
+}
+
+/* Status */
+.status {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.status.error {
+  color: #f87171;
+}

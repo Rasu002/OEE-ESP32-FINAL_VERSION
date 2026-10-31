@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: #1e1e1e;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app-window {
+  width: 600px;
+  height: 400px;
+  margin: 40px auto;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  background: #3a3a3a;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.relay-card {
+  width: 220px;
+  height: 180px;
+  background: #1f1f1f;
+  border: 1px solid #555;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.relay-title {
+  font-size: 18px;
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.relay-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 90px;
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn.on {
+  background: #2e7d32;
+}
+
+.btn.off {
+  background: #c62828;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-bar {
+  background: #3a3a3a;
+  color: #ccc;
+  padding: 8px;
+  font-size: 14px;
+  border-top: 1px solid #555;
+}

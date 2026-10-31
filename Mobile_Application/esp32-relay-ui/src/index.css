@@ -1,0 +1,184 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background: #020617;
+  color: #fff;
+}
+
+/* App container */
+.app {
+  min-height: 100vh;
+  padding:
+    env(safe-area-inset-top)
+    1rem
+    env(safe-area-inset-bottom);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+
+  background: #020617;
+}
+
+
+/* Header */
+.header {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.header h1 {
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  margin: 0;
+}
+
+.header p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Relay card */
+.card {
+  width: 100%;
+  background: #0f172a;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text */
+.card-text h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-text span {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Toggle button */
+.toggle {
+  min-width: 5.5rem;
+  min-height: 3rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.toggle.on {
+  background: #22c55e;
+  color: #000;
+}
+
+.toggle.off {
+  background: #475569;
+  color: #fff;
+}
+
+.toggle:disabled {
+  opacity: 0.6;
+}
+
+/* Status */
+.status {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.status.error {
+  color: #f87171;
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;   /* mobile-friendly width */
+}

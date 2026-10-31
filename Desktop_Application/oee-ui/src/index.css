@@ -1,0 +1,157 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+
+  /* Backgrounds */
+  --bg-app: #f3f4f6;          /* main app background (not white) */
+  --bg-surface: linear-gradient(135deg, #f4f1ec 0%, #ffffff 100%);      /* page background */
+  --bg-card: #ffffff;         /* cards */
+  --bg-muted: #eef2f7;        /* subtle sections */
+
+  /* Borders */
+  --border-light: #e5e7eb;
+  --border-medium: #d1d5db;
+
+  /* Text */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+
+  /* Accent */
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 2px 6px rgba(0,0,0,0.08);
+
+  /* =============================================
+     VIEWPORT-SCALE LAYOUT TOKENS
+     --scale is set by useViewportScale.js at runtime:
+       scale = min(innerWidth/1366, innerHeight/768)
+     All tokens multiply by --scale so the entire UI
+     proportionally fits any window size / DPI setting.
+  ============================================= */
+
+  --scale: 1;   /* JS overrides this; 1 = design size (1366×768) */
+
+  /* Layout heights */
+  --nav-height:    calc(60px  * var(--scale));
+  --bar-height:    calc(45px  * var(--scale));
+  --gauge-height:  calc(220px * var(--scale));
+  --row-height:    calc(42px  * var(--scale));
+
+  /* Typography */
+  --font-xs:   calc(11px * var(--scale));
+  --font-sm:   calc(12px * var(--scale));
+  --font-md:   calc(14px * var(--scale));
+  --font-lg:   calc(16px * var(--scale));
+  --font-xl:   calc(18px * var(--scale));
+  --font-kpi:  calc(22px * var(--scale));
+
+  /* Spacing */
+  --gap-xs:    calc( 6px * var(--scale));
+  --gap-sm:    calc( 8px * var(--scale));
+  --gap-md:    calc(16px * var(--scale));
+  --gap-lg:    calc(20px * var(--scale));
+  --pad-card:  calc(12px * var(--scale));
+  --pad-page:  calc(20px * var(--scale));
+  --pad-cell:  calc(18px * var(--scale));
+}
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg-app);
+}
+
+html, body, #root {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
