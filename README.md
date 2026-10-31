@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OEE Monitoring System & Desktop Application
 
 This repository contains the complete codebase for the OEE (Overall Equipment Effectiveness) Monitoring system. It consists of microcontroller firmware for data acquisition, HMI components, and a Tauri-based Desktop Application built with a React frontend and a FastAPI/Uvicorn Python backend.
@@ -221,3 +222,6 @@ You will find:
 3. Open **Task Manager** and confirm `production-backend.exe` is running under background processes.
 4. Close the application window.
 5. Confirm in **Task Manager** that the `production-backend.exe` process stops immediately after closing the app.
+=======
+# OEE-ESP32-FINAL_VERSION
+>>>>>>> 5f67219ccf5e67fa2e3aa758cbec8f01ddcd7494
